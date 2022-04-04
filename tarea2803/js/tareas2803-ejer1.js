@@ -1,6 +1,6 @@
 let numero,raiz,potencia;
 
-numero=parseInt(Math.ceil(Math.random()*100))   
+numero=parseInt(Math.ceil(Math.random()*100+1))   
 
 raiz=Math.sqrt(numero);
 potencia=Math.pow(numero,5);
