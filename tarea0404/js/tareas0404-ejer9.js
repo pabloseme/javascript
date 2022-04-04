@@ -5,10 +5,8 @@ let cad='',cad1='';
 for (let i=0; i<frase.length; i++)
 {
     if (vocales.indexOf(frase[i])>=0){
-        cad1= cad1+(cad1==='' ? frase[i] : ' ; '+frase[i]);
-        
+        cad1= cad1+(cad1==='' ? frase[i] : ' ; '+frase[i]);        
     }
-
     
 }
 if (cad1!==''){
