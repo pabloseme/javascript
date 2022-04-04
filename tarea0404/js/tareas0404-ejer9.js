@@ -1,14 +1,20 @@
 let frase=prompt("Ingrese una Frase :");
-const vocales = "aáeéiíoóuú";
+let vocales=['a','e','i','o','u']
+let cad='',cad1='';
 
-
-let cadena='',cadena1='';
-
-for (let letra of frase) {
-    if (vocales.includes(letra.toLowerCase())) {
+for (let i=0; i<frase.length; i++)
+{
+    if (vocales.indexOf(frase[i])>=0){
+        cad1= cad1+(cad1==='' ? frase[i] : ' ; '+frase[i]);
         
     }
+
+    
+}
+if (cad1!==''){
+    document.write(`Las Vocales que aparecen en la frase son : ${cad1}`);    
+}else{
+    document.write(`No hay Vocales en la frase ingresada`);
 }
 
 
-   
